@@ -3,17 +3,15 @@ package ru.ssau.tk.kkkonnova.practice;
 public class MainClass {
 
     public static void main(String[] args) {
-        Person Marinochka = new Person();
-        Marinochka.setFirstName("Marina");
-        Marinochka.setLastName("Vershinina");
-        Marinochka.setPassportId(361252482);
 
-        Person Kiryusha = new Person();
-        Kiryusha.setFirstName("Kirill");
-        Kiryusha.setLastName("Konnov");
-        Kiryusha.setPassportId(380107581);
+        Person Kristina = new Person();
+        Person Kiryusha = new Person("Kirill", "Konnov");
+        Person Stas = new Person(380107581);
+        Person Marinochka = new Person("Marina","Vershinina",361252482);
 
-        System.out.println(Marinochka.getFirstName() + ' ' + Marinochka.getLastName());
-        System.out.println(Kiryusha.getFirstName() + ' ' + Kiryusha.getLastName());
+        System.out.println(Kristina.getFirstName() + ' ' + Kristina.getLastName() + ' '+ Kristina.getPassportId());
+        System.out.println(Kiryusha.getFirstName() + ' ' + Kiryusha.getLastName() + ' '+ Kiryusha.getPassportId());
+        System.out.println(Stas.getFirstName() + ' ' + Stas.getLastName() + ' '+ Stas.getPassportId());
+        System.out.println(Marinochka.getFirstName() + ' ' + Marinochka.getLastName() + ' '+ Marinochka.getPassportId());
     }
 }
