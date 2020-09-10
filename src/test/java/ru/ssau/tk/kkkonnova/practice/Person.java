@@ -6,6 +6,27 @@ public class Person {
     private String lastName;
     private int passportId;
 
+    Person(){
+        firstName = "Kristina";
+        lastName = "Konnova";
+        passportId = 36062020;
+    }
+
+    Person(String myFirstName, String myLastName){
+        firstName = myFirstName;
+        lastName = myLastName;
+    }
+
+    Person(int myPassportId){
+        passportId = myPassportId;
+    }
+
+    Person(String myFirstName, String myLastName, int myPassportId){
+        firstName = myFirstName;
+        lastName = myLastName;
+        passportId = myPassportId;
+    }
+
     public String getFirstName() {
         return firstName;
     }
