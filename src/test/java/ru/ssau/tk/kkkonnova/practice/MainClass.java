@@ -8,7 +8,7 @@ public class MainClass {
         Point myPoint2 = new Point(34,56,2);
         Point myPoint3 = new Point(-4,-6,8);
 
-       Point resPoint = Points.divide(myPoint2, myPoint3);
+       Point resPoint = Points.enlarge(myPoint2, 5);
 
        System.out.println(resPoint.x);
        System.out.println(resPoint.y);
