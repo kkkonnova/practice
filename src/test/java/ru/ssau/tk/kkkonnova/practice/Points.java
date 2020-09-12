@@ -1,6 +1,8 @@
 package ru.ssau.tk.kkkonnova.practice;
 
 public class Points {
+    private Point myPoint = new Point(0,0,0);
+
     private Points(){
     }
 
@@ -23,5 +25,10 @@ public class Points {
     public static Point enlarge(Point p, double a){
         return new Point(p.x * a, p.y * a, p.z * a);
     }
-
+   public static Point opposite(Point p){
+        return new Point(-1*p.x,-1*p.y,-1*p.z);
+   }
+    public static Point inverse(Point p){
+        return new Point(1/p.x,1/p.y,1/p.z);
+    }
 }
