@@ -28,6 +28,10 @@ public class Points {
         return new Point(p.x * a, p.y * a, p.z * a);
     }
 
+    public static double length(Point p){
+        return p.length(p);
+    }
+
     public static Point opposite(Point p) {
         return new Point(-1 * p.x, -1 * p.y, -1 * p.z);
     }
