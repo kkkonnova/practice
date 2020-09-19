@@ -39,4 +39,8 @@ public class Points {
     public static Point inverse(Point p) {
         return new Point(1 / p.x, 1 / p.y, 1 / p.z);
     }
+
+    public  static double scalarProduct(Point p1, Point p2){
+        return p1.x * p2.x + p1.y * p2.y + p1.z * p2.z;
+    }
 }
