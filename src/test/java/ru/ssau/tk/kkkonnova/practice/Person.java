@@ -7,9 +7,7 @@ public class Person {
     private int passportId;
 
     Person(){
-        firstName = "Kristina";
-        lastName = "Konnova";
-        passportId = 36062020;
+
     }
 
     Person(String myFirstName, String myLastName){
