@@ -7,8 +7,9 @@ public class MyStringClass {
         String s1 = "Кристина";
         String s2 = "Stas";
         MyStringClass MyString = new MyStringClass();
-        MyString.getStringBytes(s1);
-        MyString.getStringBytes(s2);
+        //  MyString.getStringBytes(s1);
+        //  MyString.getStringBytes(s2);
+        MyString.checkingStrings();
     }
 
     void splitLine(String myString) {
@@ -19,11 +20,19 @@ public class MyStringClass {
 
     void getStringBytes(String myString) {
         byte[] stringBytes = myString.getBytes();
-        for (int bytes:stringBytes ){
+        for (int bytes : stringBytes) {
             System.out.println(bytes);
         }
 
     }
 
+    void checkingStrings() {
+        String s1 = "S";
+        String s2 = new String(s1);
+
+        System.out.println(s1 == s2);
+        System.out.println(s1.equals(s2));
+
+    }
 
 }
