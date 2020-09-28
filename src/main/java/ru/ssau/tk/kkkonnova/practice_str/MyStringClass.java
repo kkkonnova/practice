@@ -5,10 +5,14 @@ public class MyStringClass {
     public static void main(String[] args) {
 
         String s1 = "123";
-        String s2 = "Stas";
+        String s2 = "PAPA";
         MyStringClass MyString = new MyStringClass();
-        boolean res = MyString.palindromeCheck(s1);
+        boolean res = MyString.differInRegister(s1, s2);
         System.out.println(res);
+    }
+
+    boolean differInRegister(String s1, String s2) {
+        return s1.equalsIgnoreCase(s2) && !s1.equals(s2);
     }
 
     boolean palindromeCheck(String myString) {
@@ -31,6 +35,7 @@ public class MyStringClass {
 
     }
 
+    /*
     void checkingStrings() {
         String s1 = "S";
         String s2 = new String(s1);
@@ -38,6 +43,5 @@ public class MyStringClass {
         System.out.println(s1 == s2);
         System.out.println(s1.equals(s2));
 
-    }
-
+    } */
 }
