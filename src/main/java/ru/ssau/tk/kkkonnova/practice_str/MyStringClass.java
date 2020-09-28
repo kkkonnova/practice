@@ -4,13 +4,18 @@ public class MyStringClass {
 
     public static void main(String[] args) {
 
-        String s1 = "Кристина";
+        String s1 = "123";
         String s2 = "Stas";
         MyStringClass MyString = new MyStringClass();
-        //  MyString.getStringBytes(s1);
-        //  MyString.getStringBytes(s2);
-        MyString.checkingStrings();
+        boolean res = MyString.palindromeCheck(s1);
+        System.out.println(res);
     }
+
+    boolean palindromeCheck(String myString) {
+        String palindrome = new StringBuilder(myString).reverse().toString();
+        return myString.equals(palindrome);
+    }
+
 
     void splitLine(String myString) {
         for (int i = 0; i < myString.length(); i++) {
