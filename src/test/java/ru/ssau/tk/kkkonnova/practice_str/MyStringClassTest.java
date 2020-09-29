@@ -38,4 +38,12 @@ public class MyStringClassTest {
         assertEquals(MyStringClass.findFirstInSecond("ca", "456"), -1);
         assertEquals(MyStringClass.findFirstInSecond("ri", "Kristina"), 1);
     }
+
+    @Test
+    public void testGetPrefixPostfixCount() {
+        String[] strings = {"papap", "1qwerty123", "p", "123"};
+        assertEquals(MyStringClass.getPrefixPostfixCount(strings,"1","3"),2);
+        assertEquals(MyStringClass.getPrefixPostfixCount(strings,"p","p"),2);
+        assertEquals(MyStringClass.getPrefixPostfixCount(strings,"qw","p"),0);
+    }
 }
