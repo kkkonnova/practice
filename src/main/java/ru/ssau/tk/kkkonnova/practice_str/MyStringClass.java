@@ -11,6 +11,10 @@ public class MyStringClass {
         return str2.indexOf(str1);
     }
 
+    static int findFirstInSecondToo(String str1, String str2) {
+        return str2.indexOf(str1,str2.length()/2);
+    }
+
     boolean palindromeCheck(String myString) {
         String palindrome = new StringBuilder(myString).reverse().toString();
         return myString.equals(palindrome);
