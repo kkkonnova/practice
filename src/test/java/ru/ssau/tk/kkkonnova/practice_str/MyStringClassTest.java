@@ -31,4 +31,11 @@ public class MyStringClassTest {
         assertEquals(MyStringClass.findFirstInSecond("ca", "456"), -1);
         assertEquals(MyStringClass.findFirstInSecond("tina", "Kristina"), 4);
     }
+
+    @Test
+    public void testFindFirstInSecondTwo() {
+        assertEquals(MyStringClass.findFirstInSecond("a", "отвар"), -1);
+        assertEquals(MyStringClass.findFirstInSecond("ca", "456"), -1);
+        assertEquals(MyStringClass.findFirstInSecond("ri", "Kristina"), 1);
+    }
 }

@@ -11,6 +11,10 @@ public class MyStringClass {
         return str2.indexOf(str1);
     }
 
+    static int findFirstInSecondTwo(String str1, String str2){
+        return str2.lastIndexOf(str1,str2.length()/2);
+    }
+
     static int findFirstInSecondToo(String str1, String str2) {
         return str2.indexOf(str1,str2.length()/2);
     }
