@@ -15,4 +15,13 @@ public class MyStringClassTest {
         assertEquals(myString.palindromeCheck("123ghb"),false);
         assertEquals(myString.palindromeCheck("123K123"),false);
     }
+
+    @Test
+    public void testFindFirstInSecond() {
+        assertEquals(MyStringClass.findFirstInSecond("ca","abcaca"),2);
+        assertEquals(MyStringClass.findFirstInSecond("a","отвар"),-1);
+        assertEquals(MyStringClass.findFirstInSecond("ca","456"),-1);
+        assertEquals(MyStringClass.findFirstInSecond("кот","токикот"),4);
+        assertEquals(MyStringClass.findFirstInSecond("qwer","tr"),-1);
+    }
 }
