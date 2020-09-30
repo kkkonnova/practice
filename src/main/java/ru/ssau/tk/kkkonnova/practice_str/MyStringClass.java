@@ -7,6 +7,10 @@ public class MyStringClass {
         return s1.equalsIgnoreCase(s2) && !s1.equals(s2);
     }
 
+    static String concatenateStrings(String[] strs) {
+        return String.join(", ", strs);
+    }
+
     static String getSubstring(String str, int from, int to) {
         if (from < 0) {
             from = 0;
@@ -17,7 +21,7 @@ public class MyStringClass {
         if (to <= from) {
             return "";
         }
-        return str.substring(from,to);
+        return str.substring(from, to);
     }
 
     static int getPrefixPostfixCountToo(String[] strings, String prefix, String postfix) {

@@ -18,9 +18,9 @@ public class MyStringClassTest {
 
     @Test
     public void testGetSubstring() {
-        assertEquals(MyStringClass.getSubstring("string",20,100),"");
-        assertEquals(MyStringClass.getSubstring("string",1,2),"t");
-        assertEquals(MyStringClass.getSubstring("string",-1,12345),"string");
+        assertEquals(MyStringClass.getSubstring("string", 20, 100), "");
+        assertEquals(MyStringClass.getSubstring("string", 1, 2), "t");
+        assertEquals(MyStringClass.getSubstring("string", -1, 12345), "string");
     }
 
     @Test
@@ -49,16 +49,23 @@ public class MyStringClassTest {
     @Test
     public void testGetPrefixPostfixCount() {
         String[] strings = {"papap", "1qwerty123", "p", "123"};
-        assertEquals(MyStringClass.getPrefixPostfixCount(strings,"1","3"),2);
-        assertEquals(MyStringClass.getPrefixPostfixCount(strings,"p","p"),2);
-        assertEquals(MyStringClass.getPrefixPostfixCount(strings,"qw","p"),0);
+        assertEquals(MyStringClass.getPrefixPostfixCount(strings, "1", "3"), 2);
+        assertEquals(MyStringClass.getPrefixPostfixCount(strings, "p", "p"), 2);
+        assertEquals(MyStringClass.getPrefixPostfixCount(strings, "qw", "p"), 0);
+    }
+
+    @Test
+    public void testConcatenateStrings() {
+        String[] strings = {"123", "p", "try"};
+        assertEquals(MyStringClass.concatenateStrings(strings), "123, p, try");
+
     }
 
     @Test
     public void testGetPrefixPostfixCountToo() {
         String[] strings = {"   papap   ", " 1qwerty123  ", "p", " 123"};
-        assertEquals(MyStringClass.getPrefixPostfixCountToo(strings,"1","3"),2);
-        assertEquals(MyStringClass.getPrefixPostfixCountToo(strings,"p","p"),2);
-        assertEquals(MyStringClass.getPrefixPostfixCountToo(strings,"qw","p"),0);
+        assertEquals(MyStringClass.getPrefixPostfixCountToo(strings, "1", "3"), 2);
+        assertEquals(MyStringClass.getPrefixPostfixCountToo(strings, "p", "p"), 2);
+        assertEquals(MyStringClass.getPrefixPostfixCountToo(strings, "qw", "p"), 0);
     }
 }
