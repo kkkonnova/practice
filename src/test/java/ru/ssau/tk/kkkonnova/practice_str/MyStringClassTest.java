@@ -46,4 +46,12 @@ public class MyStringClassTest {
         assertEquals(MyStringClass.getPrefixPostfixCount(strings,"p","p"),2);
         assertEquals(MyStringClass.getPrefixPostfixCount(strings,"qw","p"),0);
     }
+
+    @Test
+    public void testGetPrefixPostfixCountToo() {
+        String[] strings = {"   papap   ", " 1qwerty123  ", "p", " 123"};
+        assertEquals(MyStringClass.getPrefixPostfixCountToo(strings,"1","3"),2);
+        assertEquals(MyStringClass.getPrefixPostfixCountToo(strings,"p","p"),2);
+        assertEquals(MyStringClass.getPrefixPostfixCountToo(strings,"qw","p"),0);
+    }
 }

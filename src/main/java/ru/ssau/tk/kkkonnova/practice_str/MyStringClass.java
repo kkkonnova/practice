@@ -7,6 +7,17 @@ public class MyStringClass {
         return s1.equalsIgnoreCase(s2) && !s1.equals(s2);
     }
 
+    static int getPrefixPostfixCountToo(String[] strings, String prefix, String postfix) {
+        int count = 0;
+        for (String string : strings) {
+            if (string.trim().startsWith(prefix) & string.trim().endsWith(postfix)) {
+                count++;
+            }
+        }
+        return count;
+
+    }
+
     static int findFirstInSecond(String str1, String str2) {
         return str2.indexOf(str1);
     }
@@ -20,7 +31,6 @@ public class MyStringClass {
         }
         return count;
     }
-
 
     static int findFirstInSecondTwo(String str1, String str2) {
         return str2.lastIndexOf(str1, str2.length() / 2);
