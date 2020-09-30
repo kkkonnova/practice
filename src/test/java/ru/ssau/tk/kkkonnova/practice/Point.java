@@ -11,6 +11,10 @@ public class Point {
         this.z = z;
     }
 
+    public String toString(){
+        return "[" + x + ", " + y + ", " + z + "]";
+    }
+
     double length(Point p){
         return java.lang.Math.sqrt(p.x * p.x + p.y * p.y + p.z*p.z);
     }
