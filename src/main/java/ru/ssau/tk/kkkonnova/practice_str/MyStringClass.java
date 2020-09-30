@@ -7,6 +7,19 @@ public class MyStringClass {
         return s1.equalsIgnoreCase(s2) && !s1.equals(s2);
     }
 
+    static String getSubstring(String str, int from, int to) {
+        if (from < 0) {
+            from = 0;
+        }
+        if (to > str.length()) {
+            to = str.length();
+        }
+        if (to <= from) {
+            return "";
+        }
+        return str.substring(from,to);
+    }
+
     static int getPrefixPostfixCountToo(String[] strings, String prefix, String postfix) {
         int count = 0;
         for (String string : strings) {

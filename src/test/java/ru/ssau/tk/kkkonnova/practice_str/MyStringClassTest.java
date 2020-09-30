@@ -17,6 +17,13 @@ public class MyStringClassTest {
     }
 
     @Test
+    public void testGetSubstring() {
+        assertEquals(MyStringClass.getSubstring("string",20,100),"");
+        assertEquals(MyStringClass.getSubstring("string",1,2),"t");
+        assertEquals(MyStringClass.getSubstring("string",-1,12345),"string");
+    }
+
+    @Test
     public void testFindFirstInSecond() {
         assertEquals(MyStringClass.findFirstInSecond("ca", "abcaca"), 2);
         assertEquals(MyStringClass.findFirstInSecond("a", "отвар"), -1);
