@@ -6,8 +6,12 @@ public class Person {
     private String lastName;
     private int passportId;
 
-    Person(){
+    public String toString(){
+        return  firstName + " " + lastName;
+    }
 
+
+    Person(){
     }
 
     Person(String myFirstName, String myLastName){
