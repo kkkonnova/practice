@@ -2,9 +2,14 @@ package ru.ssau.tk.kkkonnova.practice_str;
 
 public class MyStringClass {
 
-    boolean differInRegister(String s1, String s2) {
+    static String modifyAString(String str) {
 
-        return s1.equalsIgnoreCase(s2) && !s1.equals(s2);
+        StringBuilder string = new StringBuilder(str);
+        for (int i = 0; i < str.length(); i++) {
+            string.replace(i, i, "" + i);
+            i++;
+        }
+        return string.reverse().toString();
     }
 
     static String listUpX(int x) {
@@ -14,11 +19,6 @@ public class MyStringClass {
             str.append(" ");
         }
         return str.toString().trim();
-    }
-
-    public static void main(String[] args) {
-        //  System.out.println(listUpX(10000));
-        System.out.println(java.nio.charset.Charset.defaultCharset());
     }
 
     static String concatenateStrings(String[] strs) {

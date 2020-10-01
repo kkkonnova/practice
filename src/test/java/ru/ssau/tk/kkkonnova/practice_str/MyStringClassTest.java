@@ -71,6 +71,11 @@ public class MyStringClassTest {
 
     @Test
     public void testListUpX() {
-        assertEquals(MyStringClass.listUpX(3),"0 1 2");
+        assertEquals(MyStringClass.listUpX(3), "0 1 2");
+    }
+
+    @Test
+    public void testModifyAString() {
+        assertEquals(MyStringClass.modifyAString("www"), "0w2");
     }
 }
