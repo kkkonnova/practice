@@ -1,7 +1,15 @@
 package ru.ssau.tk.kkkonnova.practice_str;
 
+import java.nio.charset.Charset;
+
 public class MyStringClass {
 
+    static String getNewCharset(String str, Charset newCharset, Charset oldCharset){
+        byte[] byteString = str.getBytes(oldCharset);
+        return new String(byteString,newCharset);
+    }
+
+    //доделать 3.21
     static String modifyAString(String str) {
 
         StringBuilder string = new StringBuilder(str);

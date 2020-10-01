@@ -1,6 +1,12 @@
 package ru.ssau.tk.kkkonnova.practice_str;
 
+import com.beust.jcommander.converters.ISO8601DateConverter;
 import org.testng.annotations.Test;
+
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetDecoder;
+import java.nio.charset.CharsetEncoder;
+import java.nio.charset.StandardCharsets;
 
 import static org.testng.Assert.*;
 
@@ -77,5 +83,12 @@ public class MyStringClassTest {
     @Test
     public void testModifyAString() {
         assertEquals(MyStringClass.modifyAString("www"), "0w2");
+    }
+
+    @Test
+    public void testGetNewCharset() {
+        Charset oldCharset = StandardCharsets.ISO_8859_1;
+        Charset newCharset = StandardCharsets.UTF_8;
+        assertEquals(MyStringClass.getNewCharset("Kristina", newCharset, oldCharset),"Kristina");
     }
 }
