@@ -7,9 +7,9 @@ public class MyStringClass {
         return s1.equalsIgnoreCase(s2) && !s1.equals(s2);
     }
 
-    static String listUpX(int x){
+    static String listUpX(int x) {
         StringBuilder str = new StringBuilder();
-        for(int i=0;i<x;i++){
+        for (int i = 0; i < x; i++) {
             str.append(i);
             str.append(" ");
         }
@@ -17,7 +17,8 @@ public class MyStringClass {
     }
 
     public static void main(String[] args) {
-        System.out.println(listUpX(10000));
+        //  System.out.println(listUpX(10000));
+        System.out.println(java.nio.charset.Charset.defaultCharset());
     }
 
     static String concatenateStrings(String[] strs) {
