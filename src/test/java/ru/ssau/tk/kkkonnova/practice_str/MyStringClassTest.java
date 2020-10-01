@@ -68,4 +68,9 @@ public class MyStringClassTest {
         assertEquals(MyStringClass.getPrefixPostfixCountToo(strings, "p", "p"), 2);
         assertEquals(MyStringClass.getPrefixPostfixCountToo(strings, "qw", "p"), 0);
     }
+
+    @Test
+    public void testListUpX() {
+        assertEquals(MyStringClass.listUpX(3),"0 1 2");
+    }
 }

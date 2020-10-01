@@ -7,6 +7,19 @@ public class MyStringClass {
         return s1.equalsIgnoreCase(s2) && !s1.equals(s2);
     }
 
+    static String listUpX(int x){
+        StringBuilder str = new StringBuilder();
+        for(int i=0;i<x;i++){
+            str.append(i);
+            str.append(" ");
+        }
+        return str.toString().trim();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(listUpX(10000));
+    }
+
     static String concatenateStrings(String[] strs) {
         return String.join(", ", strs);
     }
