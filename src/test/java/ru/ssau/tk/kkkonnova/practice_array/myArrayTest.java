@@ -50,4 +50,12 @@ public class myArrayTest {
         assertEquals(myArray.generateSqrIndex(1), new int[]{0});
         assertEquals(myArray.generateSqrIndex(5), new int[]{0, 1, 4, 9, 16});
     }
+
+    @Test
+    public void testSolveQuadraticEquation() {
+        assertEquals(myArray.solveQuadraticEquation(0,2,-4),new double[]{2});
+        assertEquals(myArray.solveQuadraticEquation(10,200,9874),new double[]{});
+        assertEquals(myArray.solveQuadraticEquation(1,-2,1),new double[]{1});
+        assertEquals(myArray.solveQuadraticEquation(1,0,-9),new double[]{3,-3});
+    }
 }
