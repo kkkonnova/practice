@@ -2,6 +2,16 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static int[] generateEvenNumbers(int n) {
+        int[] array = new int[n];
+        int k = n * 2;
+        for (int i = 0; i < n; i++) {
+            array[i] = k;
+            k = k - 2;
+        }
+        return array;
+    }
+
     static int[] generateOddNumbers(int n) {
         int[] array = new int[n];
         int k = 1;

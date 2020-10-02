@@ -25,8 +25,15 @@ public class myArrayTest {
 
     @Test
     public void testGenerateOddNumbers() {
-        assertEquals(myArray.generateOddNumbers(2), new int[]{1,3});
+        assertEquals(myArray.generateOddNumbers(2), new int[]{1, 3});
         assertEquals(myArray.generateOddNumbers(1), new int[]{1});
-        assertEquals(myArray.generateOddNumbers(5), new int[]{1,3,5,7,9});
+        assertEquals(myArray.generateOddNumbers(5), new int[]{1, 3, 5, 7, 9});
+    }
+
+    @Test
+    public void testGenerateEvenNumbers() {
+        assertEquals(myArray.generateEvenNumbers(2), new int[]{4, 2});
+        assertEquals(myArray.generateEvenNumbers(1), new int[]{2});
+        assertEquals(myArray.generateEvenNumbers(5), new int[]{10, 8, 6, 4, 2});
     }
 }
