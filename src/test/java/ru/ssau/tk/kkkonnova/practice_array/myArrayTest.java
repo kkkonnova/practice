@@ -3,7 +3,15 @@ package ru.ssau.tk.kkkonnova.practice_array;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
+
 public class myArrayTest {
 
 
+    @Test
+    public void testCreateArray() {
+        assertEquals(myArray.createArray(2), new int[2]);
+        assertEquals(myArray.createArray(10), new int[10]);
+        assertEquals(myArray.createArray(1), new int[1]);
+
+    }
 }
