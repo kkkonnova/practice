@@ -14,4 +14,12 @@ public class myArrayTest {
         assertEquals(myArray.createArray(1), new int[1]);
 
     }
+
+    @Test
+    public void testGenerateArrayWithOnes() {
+        assertEquals(myArray.generateArrayWithOnes(2), new int[]{2, 2});
+        assertEquals(myArray.generateArrayWithOnes(1), new int[]{2});
+        assertEquals(myArray.generateArrayWithOnes(5), new int[]{2, 1, 1, 1, 2});
+
+    }
 }
