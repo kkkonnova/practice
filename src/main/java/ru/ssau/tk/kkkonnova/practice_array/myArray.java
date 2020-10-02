@@ -2,6 +2,22 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static int[] generateFibonacci(int n) {
+        if (n == 1) {
+            return new int[]{1};
+        }
+        if (n == 2) {
+            return new int[]{1, 1};
+        }
+        int[] array = new int[n];
+        array[0] = 1;
+        array[1] = 1;
+        for (int i = 2; i < n; i++) {
+            array[i] = array[i - 1] + array[i - 2];
+        }
+        return array;
+    }
+
     static int[] generateEvenNumbers(int n) {
         int[] array = new int[n];
         int k = n * 2;

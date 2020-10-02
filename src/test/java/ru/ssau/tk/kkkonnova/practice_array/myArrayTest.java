@@ -36,4 +36,11 @@ public class myArrayTest {
         assertEquals(myArray.generateEvenNumbers(1), new int[]{2});
         assertEquals(myArray.generateEvenNumbers(5), new int[]{10, 8, 6, 4, 2});
     }
+
+    @Test
+    public void testGenerateFibonacci() {
+        assertEquals(myArray.generateFibonacci(2), new int[]{1, 1});
+        assertEquals(myArray.generateFibonacci(1), new int[]{1});
+        assertEquals(myArray.generateFibonacci(5), new int[]{1, 1, 2, 3, 5});
+    }
 }
