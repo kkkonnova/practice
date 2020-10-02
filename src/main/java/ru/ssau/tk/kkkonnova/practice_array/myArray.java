@@ -2,6 +2,15 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static boolean findNumberInArray(int[] array, int n) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == n) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     static double[] solveQuadraticEquation(double a, double b, double c) {
         if (a == 0) {
             return new double[]{-c / b};

@@ -6,6 +6,7 @@ import static org.testng.Assert.*;
 
 public class myArrayTest {
 
+    private final static double DELTA = 0.00001;
 
     @Test
     public void testCreateArray() {
@@ -53,9 +54,17 @@ public class myArrayTest {
 
     @Test
     public void testSolveQuadraticEquation() {
-        assertEquals(myArray.solveQuadraticEquation(0,2,-4),new double[]{2});
-        assertEquals(myArray.solveQuadraticEquation(10,200,9874),new double[]{});
-        assertEquals(myArray.solveQuadraticEquation(1,-2,1),new double[]{1});
-        assertEquals(myArray.solveQuadraticEquation(1,0,-9),new double[]{3,-3});
+        assertEquals(myArray.solveQuadraticEquation(0, 2, -4), new double[]{2}, DELTA);
+        assertEquals(myArray.solveQuadraticEquation(10, 200, 9874), new double[]{}, DELTA);
+        assertEquals(myArray.solveQuadraticEquation(1, -2, 1), new double[]{1}, DELTA);
+        assertEquals(myArray.solveQuadraticEquation(1, 0, -9), new double[]{3, -3}, DELTA);
+    }
+
+    @Test
+    public void testFindNumberInArray() {
+        int[] array = {2, 6, 8, 10, 4};
+        assertEquals(myArray.findNumberInArray(array, 5), false);
+        assertEquals(myArray.findNumberInArray(array, 4), true);
+        assertEquals(myArray.findNumberInArray(array, 7), false);
     }
 }
