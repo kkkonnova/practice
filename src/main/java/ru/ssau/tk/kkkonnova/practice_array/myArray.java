@@ -2,6 +2,14 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static int[] generateSqrIndex(int n) {
+        int[] array = new int[n];
+        for (int i = 0; i < n; i++) {
+            array[i] = i * i;
+        }
+        return array;
+    }
+
     static int[] generateFibonacci(int n) {
         if (n == 1) {
             return new int[]{1};
