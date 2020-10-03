@@ -104,4 +104,11 @@ public class myArrayTest {
         assertEquals(myArray.sumWithEvenIndex(array), 10);
     }
 
+    @Test
+    public void testGetIndexOfNumber() {
+        int[] array = {2, -6, 8, 2};
+        assertEquals(myArray.getIndexOfNumber(array, 2), 0);
+        assertEquals(myArray.getIndexOfNumber(array, 8), 2);
+        assertEquals(myArray.getIndexOfNumber(array, 10), -1);
+    }
 }

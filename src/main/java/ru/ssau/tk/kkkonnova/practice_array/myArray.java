@@ -2,6 +2,16 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static int getIndexOfNumber(int[] array, int n) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == n) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
     static int sumWithEvenIndex(int[] array) {
         int sum = 0;
         for (int i = 0; i < array.length; i = i + 2) {
