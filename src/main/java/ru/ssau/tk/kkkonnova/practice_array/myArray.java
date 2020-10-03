@@ -2,6 +2,19 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static int[] getWithoutMultiplesOfThree(int n) {
+        int[] array = new int[n];
+        int k = 1;
+        for (int i = 0; i < n; i++) {
+            array[i] = k;
+            k++;
+            if (k % 3 == 0) {
+                k++;
+            }
+        }
+        return array;
+    }
+
     static boolean findNumberInArray(int[] array, int n) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == n) {

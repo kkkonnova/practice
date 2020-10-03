@@ -67,4 +67,11 @@ public class myArrayTest {
         assertEquals(myArray.findNumberInArray(array, 4), true);
         assertEquals(myArray.findNumberInArray(array, 7), false);
     }
+
+    @Test
+    public void testGetWithoutMultiplesOfThree() {
+        assertEquals(myArray.getWithoutMultiplesOfThree(1), new int[]{1});
+        assertEquals(myArray.getWithoutMultiplesOfThree(6), new int[]{1, 2, 4, 5, 7, 8});
+        assertEquals(myArray.getWithoutMultiplesOfThree(3), new int[]{1, 2, 4});
+    }
 }
