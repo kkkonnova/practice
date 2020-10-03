@@ -2,6 +2,12 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static void changeSign(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = -1 * array[i];
+        }
+    }
+
     static double[] getArithmeticProgression(int n, double a1, double d) {
         double[] array = new double[n];
         array[0] = a1;

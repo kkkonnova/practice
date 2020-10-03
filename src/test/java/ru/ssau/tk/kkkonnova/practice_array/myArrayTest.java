@@ -81,4 +81,13 @@ public class myArrayTest {
         assertEquals(myArray.getArithmeticProgression(5, -1, 2), new double[]{-1, 1, 3, 5, 7});
         assertEquals(myArray.getArithmeticProgression(3, 0, 4), new double[]{0, 4, 8});
     }
+
+    @Test
+    public void testChangeSign() {
+        int[] array = {2, -6, 8};
+        myArray.changeSign(array);
+        assertEquals(array[0], -2);
+        assertEquals(array[1], 6);
+        assertEquals(array[2], -8);
+    }
 }
