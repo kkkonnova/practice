@@ -97,4 +97,11 @@ public class myArrayTest {
         assertEquals(myArray.getGeometricProgression(2, 1, 5), new double[]{1, 5});
         assertEquals(myArray.getGeometricProgression(3, 400, 0.5), new double[]{400, 200, 100});
     }
+
+    @Test
+    public void testSumWithEvenIndex() {
+        int[] array = {2, -6, 8};
+        assertEquals(myArray.sumWithEvenIndex(array), 10);
+    }
+
 }

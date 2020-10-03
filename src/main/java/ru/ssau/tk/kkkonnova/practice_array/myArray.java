@@ -2,6 +2,29 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static int sumWithEvenIndex(int[] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i = i + 2) {
+            sum = sum + array[i];
+        }
+        return sum;
+    }
+
+    //2.13
+    /*
+        static int[] getSymmetricArray(int n) {
+            int[] array = new int[n];
+            int stop = n / 2 + n % 2;
+            for (int i = 0; i < stop-1; i++) {
+                array[i] = i+1;
+            }
+            for (int i = stop; i < n; i++) {
+                array[i] = stop;
+                stop--;
+            }
+            return array;
+        }
+    */
     static double[] getGeometricProgression(int n, double b1, double q) {
         double[] array = new double[n];
         array[0] = b1;
