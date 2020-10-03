@@ -90,4 +90,11 @@ public class myArrayTest {
         assertEquals(array[1], 6);
         assertEquals(array[2], -8);
     }
+
+    @Test
+    public void testGetGeometricProgression() {
+        assertEquals(myArray.getGeometricProgression(5, 2, 2), new double[]{2, 4, 8, 16, 32});
+        assertEquals(myArray.getGeometricProgression(2, 1, 5), new double[]{1, 5});
+        assertEquals(myArray.getGeometricProgression(3, 400, 0.5), new double[]{400, 200, 100});
+    }
 }

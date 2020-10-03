@@ -2,6 +2,15 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static double[] getGeometricProgression(int n, double b1, double q) {
+        double[] array = new double[n];
+        array[0] = b1;
+        for (int i = 1; i < n; i++) {
+            array[i] = array[i - 1] * q;
+        }
+        return array;
+    }
+
     static void changeSign(int[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = -1 * array[i];
