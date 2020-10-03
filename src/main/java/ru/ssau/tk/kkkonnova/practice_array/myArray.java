@@ -2,6 +2,15 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static double[] getArithmeticProgression(int n, double a1, double d) {
+        double[] array = new double[n];
+        array[0] = a1;
+        for (int i = 1; i < n; i++) {
+            array[i] = array[i - 1] + d;
+        }
+        return array;
+    }
+
     static int[] getWithoutMultiplesOfThree(int n) {
         int[] array = new int[n];
         int k = 1;

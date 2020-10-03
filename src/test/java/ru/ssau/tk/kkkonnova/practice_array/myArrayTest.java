@@ -74,4 +74,11 @@ public class myArrayTest {
         assertEquals(myArray.getWithoutMultiplesOfThree(6), new int[]{1, 2, 4, 5, 7, 8});
         assertEquals(myArray.getWithoutMultiplesOfThree(3), new int[]{1, 2, 4});
     }
+
+    @Test
+    public void testGetArithmeticProgression() {
+        assertEquals(myArray.getArithmeticProgression(2, 5, -2), new double[]{5, 3});
+        assertEquals(myArray.getArithmeticProgression(5, -1, 2), new double[]{-1, 1, 3, 5, 7});
+        assertEquals(myArray.getArithmeticProgression(3, 0, 4), new double[]{0, 4, 8});
+    }
 }
