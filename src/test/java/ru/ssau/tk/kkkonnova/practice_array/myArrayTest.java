@@ -121,4 +121,16 @@ public class myArrayTest {
         assertEquals(myArray.getCountOfEvenNumbers(array2), 2);
         assertEquals(myArray.getCountOfEvenNumbers(array3), 0);
     }
+
+    @Test
+    public void testGetMax() {
+        int[] array1 = {2, -6, 8, 2};
+        int[] array2 = {5};
+        Integer p1 = 8;
+        Integer p2 = 5;
+
+        assertEquals(myArray.getMax(array1), p1);
+        assertEquals(myArray.getMax(array2), p2);
+        assertEquals(myArray.getMax(new int[]{}), null);
+    }
 }

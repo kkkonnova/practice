@@ -2,6 +2,20 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static Integer getMax(int[] array) {
+
+        if (array.length == 0) {
+            return null;
+        }
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i - 1] < array[i]) {
+                max = array[i];
+            }
+        }
+        return max;
+    }
+
     static int getCountOfEvenNumbers(int[] array) {
         int count = 0;
         for (int i = 0; i < array.length; i++) {
