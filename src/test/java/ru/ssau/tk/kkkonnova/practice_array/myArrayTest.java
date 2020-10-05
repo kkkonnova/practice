@@ -133,4 +133,9 @@ public class myArrayTest {
         assertEquals(myArray.getMax(array2), p2);
         assertEquals(myArray.getMax(new int[]{}), null);
     }
+
+    @Test
+    public void testCreateTwoDimensionalArray() {
+        assertEquals(myArray.createTwoDimensionalArray(3), new int[][]{{1, 2, 3}, {4, 5}, {6}});
+    }
 }
