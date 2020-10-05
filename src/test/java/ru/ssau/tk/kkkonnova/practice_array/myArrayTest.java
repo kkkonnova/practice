@@ -111,4 +111,14 @@ public class myArrayTest {
         assertEquals(myArray.getIndexOfNumber(array, 8), 2);
         assertEquals(myArray.getIndexOfNumber(array, 10), -1);
     }
+
+    @Test
+    public void testGetCountOfEvenNumbers() {
+        int[] array1 = {2, -6, 8, 2};
+        int[] array2 = {9, -6, 3, 2};
+        int[] array3 = {7, -1, 3, 9};
+        assertEquals(myArray.getCountOfEvenNumbers(array1), 4);
+        assertEquals(myArray.getCountOfEvenNumbers(array2), 2);
+        assertEquals(myArray.getCountOfEvenNumbers(array3), 0);
+    }
 }

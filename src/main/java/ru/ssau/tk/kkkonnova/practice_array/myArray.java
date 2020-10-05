@@ -2,6 +2,16 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static int getCountOfEvenNumbers(int[] array) {
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
     static int getIndexOfNumber(int[] array, int n) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == n) {
