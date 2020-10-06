@@ -138,4 +138,12 @@ public class myArrayTest {
     public void testCreateTwoDimensionalArray() {
         assertEquals(myArray.createTwoDimensionalArray(3), new int[][]{{1, 2, 3}, {4, 5}, {6}});
     }
+
+    @Test
+    public void testIsFirstCool() {
+        int[] array1 = {2, -6, 8, 3};
+        int[] array2 = {10, -6, 8, 3};
+        assertEquals(myArray.isFirstCool(array1), true);
+        assertEquals(myArray.isFirstCool(array2), false);
+    }
 }

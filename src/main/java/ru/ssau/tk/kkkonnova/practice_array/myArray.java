@@ -2,6 +2,24 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static boolean isFirstCool(int[] array) {
+        int countFirst = 0;
+        int countLast = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % array[0] == 0) {
+                countFirst++;
+            }
+            if (array[i] % array[array.length - 1] == 0) {
+                countLast++;
+            }
+        }
+        if (countFirst > countLast) {
+            return true;
+        }
+        return false;
+    }
+
     static int[][] createTwoDimensionalArray(int n) {
         int[][] array = new int[n][];
         int m = n;
