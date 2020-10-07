@@ -2,6 +2,12 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static void applyNOT(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = ~array[i];
+        }
+    }
+
     static boolean isFirstCool(int[] array) {
         int countFirst = 0;
         int countLast = 0;

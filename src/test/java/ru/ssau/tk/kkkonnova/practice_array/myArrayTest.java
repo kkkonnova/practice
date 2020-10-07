@@ -146,4 +146,12 @@ public class myArrayTest {
         assertEquals(myArray.isFirstCool(array1), true);
         assertEquals(myArray.isFirstCool(array2), false);
     }
+
+    @Test
+    public void testApplyNOT() {
+        int[] array = {254, 32};
+        myArray.applyNOT(array);
+        assertEquals(array[0], -255);
+        assertEquals(array[1], -33);
+    }
 }
