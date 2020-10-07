@@ -2,6 +2,14 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static int[] applyNOTNewArray(int[] array) {
+        int[] arrayNOT = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            arrayNOT[i] = ~array[i];
+        }
+        return arrayNOT;
+    }
+
     static void applyNOT(int[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = ~array[i];

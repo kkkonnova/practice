@@ -154,4 +154,10 @@ public class myArrayTest {
         assertEquals(array[0], -255);
         assertEquals(array[1], -33);
     }
+
+    @Test
+    public void testApplyNOTNewArray() {
+        int[] array = {254,32};
+        assertEquals(myArray.applyNOTNewArray(array), new int[]{-255,-33});
+    }
 }
