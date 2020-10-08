@@ -157,7 +157,13 @@ public class myArrayTest {
 
     @Test
     public void testApplyNOTNewArray() {
-        int[] array = {254,32};
-        assertEquals(myArray.applyNOTNewArray(array), new int[]{-255,-33});
+        int[] array = {254, 32};
+        assertEquals(myArray.applyNOTNewArray(array), new int[]{-255, -33});
+    }
+
+    @Test
+    public void testFindEvenNumbers() {
+        int[] array1 = {2, 5, 8, 3};
+        assertEquals(myArray.findEvenNumbers(array1), new boolean[]{true, false, true, false});
     }
 }

@@ -2,6 +2,18 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static boolean[] findEvenNumbers(int[] array) {
+        boolean[] bool = new boolean[array.length];
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                bool[i] = true;
+            } else {
+                bool[i] = false;
+            }
+        }
+        return bool;
+    }
+
     static int[] applyNOTNewArray(int[] array) {
         int[] arrayNOT = new int[array.length];
         for (int i = 0; i < array.length; i++) {
