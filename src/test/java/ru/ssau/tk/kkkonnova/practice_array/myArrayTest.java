@@ -166,4 +166,11 @@ public class myArrayTest {
         int[] array1 = {2, 5, 8, 3};
         assertEquals(myArray.findEvenNumbers(array1), new boolean[]{true, false, true, false});
     }
+
+    @Test
+    public void testCheckNull() {
+        Integer[] array = new Integer[]{2, 5, 6, null};
+        assertEquals(myArray.checkNull(array), true);
+    }
+
 }

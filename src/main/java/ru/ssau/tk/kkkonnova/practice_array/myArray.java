@@ -2,6 +2,15 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class myArray {
 
+    static boolean checkNull(Integer[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == null) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     static boolean[] findEvenNumbers(int[] array) {
         boolean[] bool = new boolean[array.length];
         for (int i = 0; i < array.length; i++) {
