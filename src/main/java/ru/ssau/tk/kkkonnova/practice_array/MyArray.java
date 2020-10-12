@@ -1,6 +1,17 @@
 package ru.ssau.tk.kkkonnova.practice_array;
 
-public class myArray {
+public class MyArray {
+
+    public static void main(String[] args) {
+        String[] strs = {"12", "484"};
+        printStrings(strs);
+    }
+
+    static void printStrings(String[] strs) {
+        for (String s : strs) {
+            System.out.println(s);
+        }
+    }
 
     static boolean checkNull(Integer[] array) {
         for (int i = 0; i < array.length; i++) {
