@@ -3,15 +3,15 @@ package ru.ssau.tk.kkkonnova.practice;
 public class NamedPoint extends Point {
     private String name;
 
-    NamedPoint() {
+    public NamedPoint() {
         this(0, 0, 0, "Origin");
     }
 
-    NamedPoint(double x, double y, double z) {
+    public NamedPoint(double x, double y, double z) {
         super(x, y, z);
     }
 
-    NamedPoint(double x, double y, double z, String name) {
+    public NamedPoint(double x, double y, double z, String name) {
         super(x, y, z);
         this.name = name;
     }
@@ -22,5 +22,12 @@ public class NamedPoint extends Point {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String toString() {
+        if (name == null) {
+            return super.toString();
+        }
+        return name + " " + super.toString();
     }
 }

@@ -31,4 +31,13 @@ public class NamedPointTest {
         assertEquals(point2.getName(), "point2");
         assertEquals(point3.getName(), "point3");
     }
+
+    @Test
+    public void testTestToString() {
+        NamedPoint point1 = new NamedPoint(9, 8, 7);
+        NamedPoint point2 = new NamedPoint(1, 2, 3, "myPoint");
+
+        assertEquals(point1.toString(), "[9.0, 8.0, 7.0]");
+        assertEquals(point2.toString(), "myPoint [1.0, 2.0, 3.0]");
+    }
 }
