@@ -2,9 +2,23 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class MyArray {
 
-    public static void main(String[] args) {
-        String[] strs = {"12", "484"};
-        printStrings(strs);
+    static void exchangedMaxAndMin(int[] array) {
+        int min = array[0];
+        int indexMin = 0;
+        int max = array[0];
+        int indexMax = 0;
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+                indexMax = i;
+            }
+            if (array[i] < min) {
+                min = array[i];
+                indexMin = i;
+            }
+        }
+        array[indexMax] = min;
+        array[indexMin] = max;
     }
 
     static void printStrings(String[] strs) {

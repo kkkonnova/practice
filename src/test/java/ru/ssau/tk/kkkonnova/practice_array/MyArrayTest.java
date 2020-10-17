@@ -174,4 +174,16 @@ public class MyArrayTest {
     }
 
 
+    @Test
+    public void testExchangedMaxAndMin() {
+        int[] array0 = {1, 2, 3, 5, 6};
+        MyArray.exchangedMaxAndMin(array0);
+        assertEquals(array0, new int[]{6, 2, 3, 5, 1});
+        int[] array1 = {2};
+        MyArray.exchangedMaxAndMin(array1);
+        assertEquals(array1, new int[]{2});
+        int[] array2 = {1, 1, 2, 1, 5};
+        MyArray.exchangedMaxAndMin(array2);
+        assertEquals(array2, new int[]{5, 1, 2, 1, 1});
+    }
 }
