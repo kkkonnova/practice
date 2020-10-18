@@ -186,4 +186,12 @@ public class MyArrayTest {
         MyArray.exchangedMaxAndMin(array2);
         assertEquals(array2, new int[]{5, 1, 2, 1, 1});
     }
+
+    @Test
+    public void testM234() {
+        double[] array = {1, 2, 3};
+        assertEquals(MyArray.multiplyAdmissible(array), 6);
+        double[] array1 = {0, 1, 2, 0, 0};
+        assertEquals(MyArray.multiplyAdmissible(array1), 2);
+    }
 }

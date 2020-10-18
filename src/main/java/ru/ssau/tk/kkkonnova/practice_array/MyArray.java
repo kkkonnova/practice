@@ -2,6 +2,18 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class MyArray {
 
+    static double multiplyAdmissible(double[] array) {
+        double mult = 1;
+        for (Double i : array
+        ) {
+            if (i != 0 & !i.isInfinite() & !i.isNaN()) {
+                mult *= i;
+            }
+
+        }
+        return mult;
+    }
+
     static void exchangedMaxAndMin(int[] array) {
         int min = array[0];
         int indexMin = 0;
