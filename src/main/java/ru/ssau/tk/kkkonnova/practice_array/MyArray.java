@@ -2,6 +2,16 @@ package ru.ssau.tk.kkkonnova.practice_array;
 
 public class MyArray {
 
+    static void sortWithoutNaN(double[] array) {
+        for (Double arr : array) {
+            if (arr.isNaN()) {
+                return;
+            } else {
+                java.util.Arrays.sort(array);
+            }
+        }
+    }
+
     static double multiplyAdmissible(double[] array) {
         double mult = 1;
         for (Double i : array

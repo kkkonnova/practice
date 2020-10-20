@@ -188,10 +188,26 @@ public class MyArrayTest {
     }
 
     @Test
-    public void testM234() {
+    public void testMultiplyAdmissible() {
         double[] array = {1, 2, 3};
         assertEquals(MyArray.multiplyAdmissible(array), 6);
         double[] array1 = {0, 1, 2, 0, 0};
         assertEquals(MyArray.multiplyAdmissible(array1), 2);
+    }
+
+    @Test
+    public void testM232() {
+        double[] array = {5.5, 1, 0, 6};
+        MyArray.sortWithoutNaN(array);
+        assertEquals(array[0], 0);
+        assertEquals(array[1], 1);
+        assertEquals(array[2], 5.5);
+        assertEquals(array[3], 6);
+
+        double[] array1 = new double[2];
+        array1[0] = 1;
+        array1[1] = Double.NaN;
+        MyArray.sortWithoutNaN(array1);
+        assertEquals(array1[0], 1);
     }
 }
