@@ -6,24 +6,24 @@ public class Person {
     private String lastName;
     private int passportId;
 
-    public String toString(){
-        return  firstName + " " + lastName;
+    public String toString() {
+        return firstName + " " + lastName;
     }
 
 
-    Person(){
+    Person() {
     }
 
-    Person(String myFirstName, String myLastName){
+    Person(String myFirstName, String myLastName) {
         firstName = myFirstName;
         lastName = myLastName;
     }
 
-    Person(int myPassportId){
+    Person(int myPassportId) {
         passportId = myPassportId;
     }
 
-    Person(String myFirstName, String myLastName, int myPassportId){
+    Person(String myFirstName, String myLastName, int myPassportId) {
         firstName = myFirstName;
         lastName = myLastName;
         passportId = myPassportId;
